@@ -984,9 +984,10 @@ section {
 
 /* Back to Top Button */
 .back-to-top {
-    position: fixed;
-    bottom: 2rem;           /* Jarak dari bawah */
-    right: 2rem;            /* Jarak dari kanan */
+    position: fixed !important;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    z-index: 9999 !important;           /* Jarak dari kanan */
     width: 50px;
     height: 50px;
     background: var(--gradient-primary);
@@ -997,7 +998,6 @@ section {
     font-size: 1.2rem;
     box-shadow: 0 4px 12px var(--shadow-medium);
     transition: all 0.3s ease;
-    z-index: 1000;          /* Pastikan di atas elemen lain */
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
